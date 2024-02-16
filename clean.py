@@ -16,6 +16,8 @@ def clean_data(input1, input2, output):
 
     cleaned_df.to_csv(output, index=False)
 
+    print(f"Output file shape: {cleaned_df.shape}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
@@ -26,3 +28,4 @@ if __name__ == "__main__":
         output = sys.argv[3]
 
         clean_data(input1, input2, output)
+
